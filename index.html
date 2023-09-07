@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Delicious Restaurant</title>
+	<link rel="icon" type="image/x-icon" href="images/img/favicon.png">
+	<link rel = "apple-touch-icon" href = "images/img/apple-touch-icon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap5/bootstrap-5/css/bootstrap.css">
+	<script type="text/javascript" href="bootstrap5/bootstrap-5/js/bootstrap.js"></script>  -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		
+</head>
+<body  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  
+<header id="topbar" class="bg-dark">
+	<div class="container pt-3">
+		<div class="row">
+			<div class="col-lg-auto col-12 text-center"><i class="fa-solid fa-mobile-screen-button "></i> <span>+1 5589 55488 55</span></div>
+			<div class="col-lg-auto  d-none d-lg-block"><i class="fa-regular fa-clock"></i> <span>Mon-Sat: 11:00 AM - 23:00 PM</span></div>
+
+        </div>
+
+   </div>
+</header>
+  
+
+	 	<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Delicious</a>
+   
+<button class="navbar-toggler  order-3 order-lg-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse  order-lg-0 order-4 " id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#menu-list">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#special">Specials</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#chefs">Chefs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#restaurant-photo">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Drop down <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Deep Drop Down <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Deep Drop down 1</a></li>
+                   <li><a class="dropdown-item" href="#">Deep Drop down 2</a> </li>
+                   <li><a class="dropdown-item" href="#">Deep Drop Down 3</a></li>
+                           <li><a class="dropdown-item" href="#">Deep Drop Down 4</a></li>
+                              <li><a class="dropdown-item" href="#">Deep Drop Down 5</a></li>
+               </ul>
+
+            </li>
+            <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                        <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-3 " href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+<a  href="#boking-table"  class="btn ms-lg-auto  ms-auto me-2" role="button">Book a table</a>
+</div>
+ 
+</nav>
+
+
+<section id="banner">
+  
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class=" slide1 carousel-item active" data-interval="5000">
+      <div class="carousel-container ">
+        <div class="carousel-content">
+          <h1><span>Delicious</span> Restaurant</h1>
+          <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <div class="carousel-box">
+            <a href="#menu-list" class="btn-main">OUR MENU</a>
+            <a href="#boking-table" class="btn-main">BOOK A TABLE</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    <div class=" slide2 carousel-item" data-interval="5000">
+
+      <div class="carousel-container">
+        <div class="carousel-content">
+          <h1>Lorem Ipsum Dolor</h1>
+          <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <div class="carousel-box">
+            <a href="#menu-list" class="btn-main">OUR MENU</a>
+            <a href="#boking-table" class="btn-main">BOOK A TABLE</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class=" slide3 carousel-item" data-interval="5000">
+      
+      <div class="carousel-container ">
+        <div class="carousel-content">
+          <h1>Sequi ea ut et est quaerat</h1>
+          <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <div class="carousel-box">
+            <a href="#menu-list" class="btn-main" >OUR MENU</a>
+            <a href="#boking-table" class="btn-main">BOOK A TABLE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</section>
+<section id="about">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-5 video-part"><img src="images/img/about.jpg">
+      <button class="video-btn" href="#"><i class="fa-solid fa-play"></i></button>
+    </div>
+    <div class="col-lg-7">
+      <div class="about-content">
+      <h1>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+      <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p>
+      <ul class="list-unstyled">
+        <li><i class="fa-solid fa-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        <li class="my-3"><i class="fa-solid fa-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+        <li><i class="fa-solid fa-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+      </ul>
+      <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section id="why-choose">
+  <div class="container">
+    <div class="sec-title">
+      <h1>Why choose <span>Our Restaurant</span></h1>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="box-part">
+          <h3>01</h3>
+          <h1>Lorem Ipsum</h1>
+          <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-lg-0 mt-4">
+        <div class="box-part">
+          <h3>02</h3>
+          <h1>Repellat Nihil</h1>
+          <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-lg-0 mt-4">
+        <div class="box-part">
+          <h3>03</h3>
+          <h1>Ad ad velit qui</h1>
+          <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="menu-list">
+  <div class="container">
+  <h1>Check our tasty <span>Menu</span></h1>
+<div>
+  <div class="row">
+    <div class="col-lg-12 d-flex justify-content-center text-center">
+      <div id="myBtnContainer" class="menu-btns">
+      <button class="btn1 active"onclick="filterSelection('all')">Show all</button>
+  <button class="btn1" onclick="filterSelection('startrs')">Starters</button>
+  <button class="btn1" onclick="filterSelection('salad')">Salads</button>
+  <button class="btn1" onclick="filterSelection('special')">Specialty</button>
+  </div>
+  </div>
+  </div>
+  
+<div class="menu-sec containerxy">
+  <div class="row mt-4">
+    <div class="col-lg-6">
+      <div class="filterDiv startrs">
+      <div class="menu-content d-flex justify-content-between">
+      <a>Lobster Bisque</a><strong>$5.95</strong>
+    </div>
+      <div class="menu-ingd">Lorem, deren, trataro, filede, nerada</div>
+    </div></div>
+   
+  <div class="col-lg-6"> 
+    <div class="filterDiv startrs">
+    <div class="menu-content d-flex justify-content-between">
+      <a>Bread barrel</a><strong>$6.95</strong></div>
+      <div class="menu-ingd">Lorem, deren, trataro, filede, nerada</div>
+  </div> </div>
+  <div class="col-lg-6">
+    <div class="filterDiv startrs">
+    <div class="menu-content d-flex justify-content-between">
+      <a>Crab Cake</a><strong>$7.95</strong></div>
+      <div class="menu-ingd">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</div></div></div>
+
+  <div class="col-lg-6"><div class="filterDiv special salad">
+    <div class="menu-content d-flex justify-content-between">
+      <a>Caesar Selections</a><strong>$8.95</strong></div>
+      <div class="menu-ingd">Lorem, deren, trataro, filede, nerada</div>
+    </div></div>
+  <div class="col-lg-6">
+    <div class="filterDiv special"><div class="menu-content d-flex justify-content-between ">
+      <a>Tuscan Grilled</a><strong>$9.95</strong></div>
+      <div class="menu-ingd">Grilled chicken with provolone, artichoke hearts, and roasted red pesto</div></div></div>
+  <div class="col-lg-6">
+    <div class="filterDiv startrs">
+    <div class="menu-content d-flex justify-content-between">
+      <a>Mozzarella Stick</a><strong>$4.95</strong></div>
+      <div class="menu-ingd">Lorem, deren, trataro, filede, nerada</div></div></div>
+  <div class="col-lg-6">
+    <div class="filterDiv startrs salad"><div class="menu-content d-flex justify-content-between">
+      <a>Greek Salad</a><strong>$9.95</strong></div>
+      <div class="menu-ingd">Fresh spinach, crisp romaine, tomatoes, and Greek olives</div>
+    </div></div>
+  <div class="col-lg-6"><div class="filterDiv special salad"><div class="menu-content d-flex justify-content-between">
+      <a>Spinach Salad</a><strong>$9.95</strong></div>
+      <div class="menu-ingd">Fresh spinach, crisp romaine, tomatoes, and Greek olives</div></div></div>
+  <div class="col-lg-6"><div class="filterDiv startrs special"><div class="menu-content d-flex justify-content-between">
+      <a>Lobster Roll</a><strong>$12.95</strong></div>
+      <div class="menu-ingd">Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</div></div></div>
+  
+  </div>
+
+  </div>
+</div>
+
+  </div>
+</section>
+ 
+
+ <section id="special">
+  <div class="container">
+    <div class="sec-title">
+      <h1>Check Our<span> Specials</span></h1>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+<div class="row">
+  <div class="col-lg-3">
+    <div class="tab">
+  <button class="tablinks" onclick="openSpecial(event, 'London')" id="defaultOpen">Modi sit est</button>
+  <button class="tablinks" onclick="openSpecial(event, 'Paris')">Unde praesentium sed</button>
+  <button class="tablinks" onclick="openSpecial(event, 'Tokyo')">Pariatur explicabo vel</button>
+  <button class="tablinks" onclick="openSpecial(event, 'rio')">Nostrum qui quasi</button>
+  <button class="tablinks" onclick="openSpecial(event, 'olymp')">Iusto ut expedita aut</button>
+</div>
+  </div>
+
+  <div class="col-lg-9">
+    <div class="tabcontent" id="London">
+      <div class="row d-flex flex-row">
+      <div class="col-lg-8 order-lg-1 order-2">
+        <h1>Architecto ut aperiam autem id</h1>
+        <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+       </div>
+           <div class="col-lg-4 order-lg-2 order-1">
+                <img class="img-fluid " src="images/img/specials-1.jpg">
+           </div>
+           </div>
+    </div>
+
+
+    <div class=" tabcontent" id="Paris">
+       <div class="row d-flex flex-row">
+      <div class="col-lg-8 order-lg-1 order-2">
+        <h1>Et blanditiis nemo veritatis excepturi</h1>
+        <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+        <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+       </div>
+           <div class="col-lg-4 order-lg-2 order-1">
+                <img class="img-fluid" src="images/img/specials-2.jpg">
+           </div>
+            </div>
+    </div>
+      <div class="tabcontent" id="Tokyo">
+        <div class="row d-flex flex-row">
+      <div class="col-lg-8 order-lg-1 order-2">
+        <h1>Impedit facilis occaecati odio neque aperiam sit</h1>
+        <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+        <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+       </div>
+           <div class="col-lg-4 order-lg-2 order-1">
+                <img class="img-fluid" src="images/img/specials-3.jpg">
+           </div>
+         </div>
+    </div>
+
+<div class="tabcontent" id="rio">
+  <div class="row d-flex flex-row">
+      <div class="col-lg-8 order-lg-1 order-2">
+        <h1>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h1>
+        <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+       </div>
+           <div class="col-lg-4 order-lg-2 order-1">
+                <img class="img-fluid" src="images/img/specials-4.jpg">
+           </div>
+         </div>
+    </div>
+
+<div class="tabcontent" id="olymp">
+  <div class="row">
+      <div class="col-lg-8 order-lg-1 order-2">
+        <h1>Est eveniet ipsam sindera pad rone matrelat sando reda</h1>
+        <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+       </div>
+           <div class="col-lg-4 order-lg-2 order-1">
+                <img class="img-fluid" src="images/img/specials-5.jpg">
+           </div>
+         </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+  </div>
+  
+</section>
+
+
+
+
+<section id="events">
+  <div class="container">
+<div class="sec-title sub-hdg">
+      <h1>Organize Your<span> Events </span>in our Restaurant</h1>
+</div>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner ">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/img/event-birthday.jpg" class="img-fluid" alt="birthday party">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h1>Birthday Parties</h1>
+          <a>$189</a>
+          <p class="fst-italic mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+          <ul class="list-unstyled">
+            <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          </ul>
+          <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+        </div>
+      </div>
+      
+  </div>
+    <div class="carousel-item" data-bs-interval="2000">
+       <div class="row">
+        <div class="col-lg-6">
+          <img src="images/img/event-private.jpg" class="img-fluid" alt="private party">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h1>Private Parties</h1>
+          <a>$290</a>
+          <p class="fst-italic mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+          <ul class="list-unstyled">
+            <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          </ul>
+          <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+        </div>
+    </div>
+  </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/img/event-custom.jpg" class="img-fluid" alt="custom party">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <h1>Custom Parties</h1>
+          <a>$99</a>
+          <p class="fst-italic mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+          <ul class="list-unstyled">
+            <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          </ul>
+          <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+        </div>
+    
+    </div>
+  </div>
+ 
+</div>
+</div>
+
+</div>
+</section>
+<section id="boking-table">
+  <div class="container">
+    <div class="sec-title">
+      <h1>Book a<span> Table</span></h1>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+    <form action="" method="post">
+      <div class="row">
+        <div class="col-lg-4 mt-4 mt-lg-0 col-md-6">
+           <input type="text" class="form-control"  placeholder="Your Name" name="fname">
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0 col-md-6">     
+    <input type="email" class="form-control"  placeholder="Your email" name="email">
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0 col-md-6">
+              <input type="tel" class="form-control"  placeholder="Your Phone" name="number">
+        </div>
+   
+        <div class="col-lg-4 mt-4 col-md-6">
+           <input type="text" class="form-control"  placeholder="Date" name="date">
+        </div>
+        <div class="col-lg-4 mt-4 col-md-6">     
+    <input type="text" class="form-control"  placeholder="Time" name="time">
+        </div>
+        <div class="col-lg-4 mt-4 col-md-6">
+              <input type="number"  min="1" max="5" class="form-control"  placeholder="# of people" name="people">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <textarea class="form-control mt-4" rows="5" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+        <button class="btn mt-4 d-inline-block">Send Message</button>
+        </div>
+      </div>
+    </form>
+
+
+
+
+
+  </div>
+</section>
+<section id="restaurant-photo">
+  <div class="container">
+<div class="sec-title">
+      <h1>Some photos from <span> Our Restaurant</span></h1>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+</div>
+  </div>
+  <div class="container-fluid">
+    <div class="row g-0">
+   <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></a></div></div>
+   <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"></a></div></div>
+
+  <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"></a></div></div>
+
+   <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"></a></div></div>
+
+    <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"></a></div></div>
+
+    <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"></a></div></div>
+
+    <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"></a></div></div>
+
+    <div class="col-lg-3 col-md-4"><div class="gallery-content"><a class="gallery-pic"><img class="img-fluid" src="images/img/gallery/gallery-8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow"></a></div></div>
+
+    </div>
+    <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="images/img/gallery/gallery-1.jpg"  style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/img/gallery/gallery-2.jpg"style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/img/gallery/gallery-3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="images/img/gallery/gallery-4.jpg"style="width:100%">
+    </div>
+    
+     <div class="mySlides">
+      <img src="images/img/gallery/gallery-5.jpg"style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <img src="images/img/gallery/gallery-6.jpg"style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <img src="images/img/gallery/gallery-7.jpg"style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <img src="images/img/gallery/gallery-8.jpg"style="width:100%">
+    </div>
+
+   
+  </div>
+   <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right"></i></a>
+</div>
+
+  </div>
+</section>
+<section id="chefs">
+   <div class="container">
+<div class="sec-title">
+      <h1>Our Proffesional<span> Chefs</span></h1>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+        <div class="chef-name">
+            <img class="img-fluid" src="images/img/chefs/chefs-1.jpg">
+              <div class="chef-info">
+                <h1>Walter White</h1>
+                <span>     </span>
+                <h3>Master Chef</h3>
+                <p><a><i class="fa-brands fa-twitter"></i></a> <a><i class="fa-brands fa-facebook"></i></a> <a><i class="fa-brands fa-instagram"></i></a> <a><i class="fa-brands fa-linkedin"></i></a></p>
+          </div></div>
+        </div>
+         <div class="col-lg-4 col-md-6">
+          <div class="chef-name">
+            <div class="snap"><img class="img-fluid" src="images/img/chefs/chefs-2.jpg"></div>
+            <div class="chef-info">
+               <h1>Sarah Jhonson</h1>
+                <h3>Patissier</h3>
+                <p><a><i class="fa-brands fa-twitter"></i></a> <a><i class="fa-brands fa-facebook"></i></a> <a><i class="fa-brands fa-instagram"></i></a> <a><i class="fa-brands fa-linkedin"></i></a></p>
+          </div></div></div>
+          <div class="col-lg-4 col-md-6">
+            <div class="chef-name">
+            <img class="img-fluid" src="images/img/chefs/chefs-3.jpg">
+            <div class="chef-info">
+               <h1>William Anderson</h1>
+                <h3>Cook</h3>
+                <p><a><i class="fa-brands fa-twitter"></i></a> <a><i class="fa-brands fa-facebook"></i></a> <a><i class="fa-brands fa-instagram"></i></a> <a><i class="fa-brands fa-linkedin"></i></a></p>
+              </div>
+          </div></div>
+  
+</div>
+</div>
+
+</section>
+<section id="reviews">
+  <div class="container">
+  <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="2000">
+      <img src="images/img/testimonials/testimonials-1.jpg" class="pic" alt="...">
+      
+        <h5>Saul Goodman</h5>
+        <h6>Ceo & Founder</h6>
+        <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+    
+     <p><i class="fa-solid fa-quote-left"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fa-solid fa-quote-right"></i></p> 
+    </div>
+    <div class="carousel-item" data-interval="2000">
+  <img src="images/img/testimonials/testimonials-2.jpg" class="pic" alt="...">
+      
+      <h5>Sara Willson</h5>
+        <h6>Designerr</h6>
+        <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+    
+     <p><i class="fa-solid fa-quote-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="fa-solid fa-quote-right"></i></p> 
+    </div>
+    
+    <div class="carousel-item" data-interval="2000">
+      <img src="images/img/testimonials/testimonials-3.jpg" class="pic" alt="...">
+      
+        <h5>Jena Karlis</h5>
+        <h6>Store Owner</h6>
+        <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+    
+     <p><i class="fa-solid fa-quote-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="fa-solid fa-quote-right"></i></p> 
+    </div>
+      
+    
+
+    <div class="carousel-item" data-interval="2000">
+      <img src="images/img/testimonials/testimonials-4.jpg" class="pic" alt="...">
+      
+      <h5>Matt Brandon</h5>
+        <h6>Freelancer</h6>
+        <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+    
+     <p><i class="fa-solid fa-quote-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="fa-solid fa-quote-right"></i></p> 
+    </div>
+  
+
+    <div class="carousel-item" data-interval="2000">
+      <img src="images/img/testimonials/testimonials-5.jpg" class="pic" alt="...">
+      
+       <h5>John Larsonn</h5>
+        <h6>Entrepreneur</h6>
+        <a><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></a>
+    
+     <p><i class="fa-solid fa-quote-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="fa-solid fa-quote-right"></i></p> 
+    </div>
+      
+  
+
+
+  </div>
+  
+</div>
+
+</div>
+
+</section>
+<section id="contact">
+   <div class="container">
+<div class="sec-title">
+      <h1>Contact<span> Us</span></h1>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+  </div>
+    <div class="container-fluid">
+      <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.6400651619438!2d76.87231851071455!3d30.33275430474868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fb63c84000001%3A0xefdf8d41100d0d37!2sPansofic%20Solutions!5e0!3m2!1sen!2sin!4v1687843537732!5m2!1sen!2sin" class="map"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="contact-info">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 d-flex contact-item mt-4 mt-lg-0">
+        <i class="fa-solid fa-location-dot"></i>
+         <div><h1>Location:</h1>
+        <p>A108 Adam Street<br>New York, NY 535022</p></div>
+        </div>
+         <div class="col-lg-3 col-md-6 d-flex contact-item mt-4 mt-lg-0">
+         <i class="fa-regular fa-clock"></i>
+         <div><h1>Open Hours:</h1>
+        <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p></div>
+        </div>
+         
+          <div class="col-lg-3 col-md-6 d-flex contact-item mt-4 mt-lg-0">
+            <i class="fa-regular fa-envelope"></i>
+         <div><h1>Email:</h1>
+        <p>info@example.com<br>contact@example.com</p></div>
+        </div>
+    
+           <div class="col-lg-3 col-md-6 d-flex contact-item mt-4 mt-lg-0">
+             <i class="fa-solid fa-mobile-screen-button"></i>
+         <div><h1>Call:</h1>
+        <p>+1 5589 55488 51<br>+1 5589 22475 14</p></div>
+        </div>
+           </div>
+           </div>
+           <form action="" method="post" class="">
+             <div class="row">
+               <div class="col-md-6">
+                 <input type="text" class="form-control"  placeholder="Your Name" name="fname">
+               </div>
+               <div class="col-md-6 mt-4 mt-md-0">
+                 <input type="email" class="form-control"  placeholder="Your Email" name="email">
+               </div>
+             </div>
+             <div class="row mt-4">
+               <div class="col">
+                 <input type="text" class="form-control"  placeholder="Subject" name="subject">
+               </div>
+             </div>
+              <div class="row mt-4">
+               <div class="col">
+                  <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+               </div>
+             </div>
+             <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+        <button class="btn mt-4 d-inline-block">Send Message</button>
+        </div>
+      </div>
+           </form>
+      </div>
+    
+</section>
+<section id="footer">
+  <div class="container">
+  <h1>Delicious</h1>
+  <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+  <h3><a><i class="fa-brands fa-twitter"></i></a> <a><i class="fa-brands fa-facebook"></i></a> <a><i class="fa-brands fa-instagram"></i></a> <a><i class="fa-brands fa-skype"></i></a> <a><i class="fa-brands fa-linkedin-in"></i></a></h3>
+  <h4><i class="fa-regular fa-copyright"></i> Copyright <strong>Delicious.</strong> All Rights Reserved</h4>
+  <h6>Designed by <span>BootstrapMade</span></h6>
+  <span class="back-to-up" href="#"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+
+</section>
+</body>
+<script>
+// program for counters
+//   $(document).ready(function(){
+    
+//    $('.statistic-counter').counterUp({
+//                 delay: 10,
+//                 time: 2000
+//             });
+    
+    
+// });
+
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn1");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+  });
+}
+
+// Program for vertical tabs
+ function openSpecial(evt, cityName) 
+   {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+
+
+
+
+// program for gallery lightbox or modal 
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+// 
+// const section = document.getElementById('#about');
+// const observer = new IntersectionObserver((entries) => {
+//   // Check if the section is intersecting the viewport
+//   if (entries[0].isIntersecting) {
+//     // Section is visible, change menu hover color
+
+//     // Get the menu item by ID
+//  const menuItem = document.getElementById('#about1');
+//  menuItem.classList.add('.navbar-nav .nav-item .nav-link');}
+
+
+
+
+
+
+
+
+
+
+// program for filter tabs
+
+// $(document).ready(function() {
+  
+
+//   var $btns = $('#menu-list .btn').click(function() {
+//     if (this.id == 'all') {
+//       $('#parent > div').fadeIn(450);
+//     } else {
+//       var $el = $('.' + this.id).fadeIn(450);
+//       $('#parent > div').not($el).hide();
+//     }
+//     $btns.removeClass('active');
+//     $(this).addClass('active');
+//   })
+// });
+
+
+// Program for sticky nav-bar
+// When the user scrolls the page, execute myFunction
+// window.onscroll = function() {myFunction()};
+
+// // Get the navbar
+// var navbar = document.getElementById("midbar");
+
+// // Get the offset position of the navbar
+// var sticky = navbar.offsetTop;
+
+// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+
+
+
+
+</script>
+</html>
