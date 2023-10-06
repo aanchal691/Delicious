@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-*
+
 body{
 	font-family: "Poppins", sans-serif;
 	color: #444444;
@@ -67,7 +67,11 @@ font-family: 'Satisfy', sans-serif;
  .navbar a.btn:hover{
 	background-color: rgb(255 176 59);
 }
-
+@media (max-width: 768px){
+.collapse.show {
+    background-color:#000;
+}
+}
 #banner{
 	width: 100%;
 position: relative;
@@ -141,6 +145,10 @@ position: relative;
     font-family: 'Satisfy', sans-serif;
     animation: fadeIndown 1s ease-in both;
 }
+@media (max-width: 768px){
+#banner h1 {
+    font-size: 28px;
+}}
  @keyframes fadeInup {
                    from {
                           opacity: 0;
